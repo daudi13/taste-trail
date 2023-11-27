@@ -3,8 +3,10 @@ import styles from './page.module.css'
 import hero from '/public/assets/hero.png'
 import Link from 'next/link'
 import Button from '@/components/Button/Button'
+require('dotenv').config();
 
 export default function Home() {
+  console.log("KEY", process.env.MONGO)
   return (
     <div className={styles.container}>
       <div className={styles.heroItem}>

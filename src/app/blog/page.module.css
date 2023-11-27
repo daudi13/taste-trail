@@ -25,6 +25,11 @@
   flex: 1;
 }
 
+.contentTitle{
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
 .contentText{
   font-size: 20px;
 }
