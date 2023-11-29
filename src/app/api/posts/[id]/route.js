@@ -12,3 +12,14 @@ export const GET = async (request, { params }) => {
     return new NextResponse("Database error", {status: 500})
   }
 } 
+
+export const DELETE = async (request, { params }) => {
+  const { id } = params;
+  try {
+    await connect()
+  await Post.findByIdAndDelete(id)
+    return new NextResponse("post was deleted successfully!", {status: 201})
+  } catch (err) {
+    return new NextResponse("Database error", {status: 500})
+  }
+} 

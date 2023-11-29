@@ -1,0 +1,68 @@
+.container {
+  display: flex;
+  gap: 100px;
+}
+
+.posts{
+  flex: 1;
+}
+
+.post {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.imgContainer{
+  position: relative;
+  width: 100%;
+  height: 500px;
+}
+
+.img{
+  object-fit: contain;
+}
+
+.form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.input, .textarea {
+  padding: 10px 30px;
+  font-size: 18px;
+  outline: none;
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+  border: 2px solid #ddd;
+}
+
+.sendBtn {
+  align-self: flex-start;
+  padding: 18px;
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  background-color: #53c28b;
+}
+
+.postTitle{
+  margin-bottom: 20px;
+}
+
+.delete{
+  margin-top: 20px;
+  padding: 10px 15px;
+  background-color: #53c28b;
+  font-weight: 700;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+}
+
